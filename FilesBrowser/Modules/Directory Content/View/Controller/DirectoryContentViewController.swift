@@ -101,8 +101,9 @@ extension DirectoryContentViewController: UITableViewDelegate, UITableViewDataSo
                 router.navigate(to: .directory(directoryContentPresenter))
                 
             case .media:
-                // present AudioPlayerViewController
-                break
+                let files = presenter.getMediaFiles()
+                let audioPlayerPresenter = AudioPlayerPresenter(mediaFiles: files, current: file)
+                router.present(.audioPlayer(audioPlayerPresenter))
                 
             default: break
         }

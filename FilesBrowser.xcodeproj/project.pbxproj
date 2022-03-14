@@ -50,6 +50,11 @@
 		FF32094627DFEF6A00E6D0A2 /* FileExtension + FileAppearanceRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32094527DFEF6A00E6D0A2 /* FileExtension + FileAppearanceRepresentable.swift */; };
 		FF32094827DFF29A00E6D0A2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32094727DFF29A00E6D0A2 /* AppCoordinator.swift */; };
 		FF32094A27DFF2AB00E6D0A2 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32094927DFF2AB00E6D0A2 /* RootRouter.swift */; };
+		FF32095127DFF51800E6D0A2 /* AudioPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF32094F27DFF51800E6D0A2 /* AudioPlayerViewController.xib */; };
+		FF32095227DFF51800E6D0A2 /* AudioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32095027DFF51800E6D0A2 /* AudioPlayerViewController.swift */; };
+		FF32095427DFF55400E6D0A2 /* AudioPlayerViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32095327DFF55400E6D0A2 /* AudioPlayerViewProtocol.swift */; };
+		FF32095627DFF57100E6D0A2 /* AudioPlayerPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32095527DFF57100E6D0A2 /* AudioPlayerPresenterProtocol.swift */; };
+		FF32095827DFF58900E6D0A2 /* AudioPlayerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32095727DFF58900E6D0A2 /* AudioPlayerPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +122,11 @@
 		FF32094527DFEF6A00E6D0A2 /* FileExtension + FileAppearanceRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileExtension + FileAppearanceRepresentable.swift"; sourceTree = "<group>"; };
 		FF32094727DFF29A00E6D0A2 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FF32094927DFF2AB00E6D0A2 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		FF32094F27DFF51800E6D0A2 /* AudioPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioPlayerViewController.xib; sourceTree = "<group>"; };
+		FF32095027DFF51800E6D0A2 /* AudioPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewController.swift; sourceTree = "<group>"; };
+		FF32095327DFF55400E6D0A2 /* AudioPlayerViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewProtocol.swift; sourceTree = "<group>"; };
+		FF32095527DFF57100E6D0A2 /* AudioPlayerPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerPresenterProtocol.swift; sourceTree = "<group>"; };
+		FF32095727DFF58900E6D0A2 /* AudioPlayerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +235,7 @@
 			children = (
 				FF3208E927DFDE0B00E6D0A2 /* Launch Screen */,
 				FF32091327DFEA2D00E6D0A2 /* Directory Content */,
+				FF32094B27DFF4E400E6D0A2 /* Audio Player */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -453,6 +464,42 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		FF32094B27DFF4E400E6D0A2 /* Audio Player */ = {
+			isa = PBXGroup;
+			children = (
+				FF32094E27DFF4FD00E6D0A2 /* Presenter */,
+				FF32094C27DFF4F300E6D0A2 /* View */,
+			);
+			path = "Audio Player";
+			sourceTree = "<group>";
+		};
+		FF32094C27DFF4F300E6D0A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF32094D27DFF4F700E6D0A2 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF32094D27DFF4F700E6D0A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF32095327DFF55400E6D0A2 /* AudioPlayerViewProtocol.swift */,
+				FF32095027DFF51800E6D0A2 /* AudioPlayerViewController.swift */,
+				FF32094F27DFF51800E6D0A2 /* AudioPlayerViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF32094E27DFF4FD00E6D0A2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FF32095527DFF57100E6D0A2 /* AudioPlayerPresenterProtocol.swift */,
+				FF32095727DFF58900E6D0A2 /* AudioPlayerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -561,6 +608,7 @@
 				FF3208C227DFDD9400E6D0A2 /* LaunchScreen.storyboard in Resources */,
 				FF32093E27DFEEB900E6D0A2 /* FileTableViewCell.xib in Resources */,
 				FF3208BF27DFDD9400E6D0A2 /* Assets.xcassets in Resources */,
+				FF32095127DFF51800E6D0A2 /* AudioPlayerViewController.xib in Resources */,
 				FF32091B27DFEACC00E6D0A2 /* DirectoryContentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,11 +648,15 @@
 				FF32092727DFED3500E6D0A2 /* UIView.swift in Sources */,
 				FF32093827DFEE4400E6D0A2 /* FilesRouter.swift in Sources */,
 				FF32092427DFED1A00E6D0A2 /* Collection.swift in Sources */,
+				FF32095627DFF57100E6D0A2 /* AudioPlayerPresenterProtocol.swift in Sources */,
 				FF32090C27DFE44200E6D0A2 /* MediaFileDetails.swift in Sources */,
 				FF32091F27DFEB2A00E6D0A2 /* DirectoryContentPresenterProtocol.swift in Sources */,
 				FF32090E27DFE45900E6D0A2 /* FileExtension.swift in Sources */,
+				FF32095227DFF51800E6D0A2 /* AudioPlayerViewController.swift in Sources */,
 				FF32090A27DFE42E00E6D0A2 /* FileDetails.swift in Sources */,
+				FF32095827DFF58900E6D0A2 /* AudioPlayerPresenter.swift in Sources */,
 				FF3208FE27DFE2BD00E6D0A2 /* FileContentRepresentable.swift in Sources */,
+				FF32095427DFF55400E6D0A2 /* AudioPlayerViewProtocol.swift in Sources */,
 				FF3208F527DFE0CF00E6D0A2 /* FilesManaging.swift in Sources */,
 				FF32092127DFEB4E00E6D0A2 /* DirectoryContentViewProtocol.swift in Sources */,
 				FF32090827DFE41200E6D0A2 /* FileContent.swift in Sources */,

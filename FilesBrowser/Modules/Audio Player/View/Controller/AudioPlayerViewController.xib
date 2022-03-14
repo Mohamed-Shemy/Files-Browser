@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudioPlayerViewController" customModule="PlayerReader" customModuleProvider="target">
+            <connections>
+                <outlet property="elapsedTimeLabel" destination="qND-QK-e65" id="6sU-Xj-a7f"/>
+                <outlet property="nextButton" destination="3cd-Kk-bXp" id="atR-WC-7v7"/>
+                <outlet property="playButton" destination="Kww-mr-WZP" id="Pp7-iP-unS"/>
+                <outlet property="previousButton" destination="x8Z-CA-TSC" id="2Bb-ph-EDs"/>
+                <outlet property="progressSlider" destination="X8d-41-agt" id="Rbq-xB-gvP"/>
+                <outlet property="remainingTimeLabel" destination="G8e-WD-CE4" id="g4J-lk-62x"/>
+                <outlet property="titleLabel" destination="CZi-A4-EGo" id="AMf-JF-H5r"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VZP-OB-DVY">
+                    <rect key="frame" x="15" y="59" width="384" height="788"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZi-A4-EGo">
+                            <rect key="frame" x="0.0" y="0.0" width="384" height="531.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tY2-ba-8el">
+                            <rect key="frame" x="0.0" y="551.5" width="384" height="236.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7jK-WK-Y6u">
+                                    <rect key="frame" x="0.0" y="0.0" width="384" height="60"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8Z-CA-TSC">
+                                            <rect key="frame" x="0.0" y="0.0" width="121.5" height="60"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="chevron.backward.2" catalog="system">
+                                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                </preferredSymbolConfiguration>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="previousButtonDidTapped:" destination="-1" eventType="touchUpInside" id="Blb-6i-YJM"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kww-mr-WZP">
+                                            <rect key="frame" x="131.5" y="0.0" width="121" height="60"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system">
+                                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                </preferredSymbolConfiguration>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="playPauseButtonDidTapped:" destination="-1" eventType="touchUpInside" id="N9x-UG-YSL"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cd-Kk-bXp">
+                                            <rect key="frame" x="262.5" y="0.0" width="121.5" height="60"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="chevron.right.2" catalog="system"/>
+                                            <buttonConfiguration key="configuration" style="plain">
+                                                <imageReference key="image" image="chevron.right.2" catalog="system" symbolScale="large"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" scale="default">
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                </preferredSymbolConfiguration>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="nextButtonDidTapped:" destination="-1" eventType="touchUpInside" id="KQ8-WB-VSL"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="F7y-Uk-ei1"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="m7N-GC-hB9">
+                                    <rect key="frame" x="0.0" y="80" width="384" height="156.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qND-QK-e65">
+                                            <rect key="frame" x="0.0" y="0.0" width="46" height="156.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="X8d-41-agt">
+                                            <rect key="frame" x="64" y="0.0" width="256" height="157.5"/>
+                                            <connections>
+                                                <action selector="progressSliderValueDidChanged:" destination="-1" eventType="valueChanged" id="6pe-Pb-Hbq"/>
+                                            </connections>
+                                        </slider>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8e-WD-CE4">
+                                            <rect key="frame" x="338" y="0.0" width="46" height="156.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="tY2-ba-8el" firstAttribute="width" secondItem="VZP-OB-DVY" secondAttribute="width" multiplier="0.5" id="Ogc-GU-0GG"/>
+                        <constraint firstItem="tY2-ba-8el" firstAttribute="height" secondItem="VZP-OB-DVY" secondAttribute="height" multiplier="0.3" id="dVB-dk-I6Q"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Ogc-GU-0GG"/>
+                            <exclude reference="dVB-dk-I6Q"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="Ogc-GU-0GG"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact" alignment="fill" axis="vertical">
+                        <mask key="constraints">
+                            <include reference="dVB-dk-I6Q"/>
+                        </mask>
+                    </variation>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="VZP-OB-DVY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="7bp-aJ-0cn"/>
+                <constraint firstItem="VZP-OB-DVY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="FQA-2I-rR8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VZP-OB-DVY" secondAttribute="bottom" constant="15" id="g6e-g1-egs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VZP-OB-DVY" secondAttribute="trailing" constant="15" id="kqs-1l-wlj"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="112"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.backward.2" catalog="system" width="128" height="105"/>
+        <image name="chevron.right.2" catalog="system" width="128" height="105"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

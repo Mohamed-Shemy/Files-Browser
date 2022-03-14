@@ -20,12 +20,18 @@ extension FilesRouter {
 enum FilesNavigatable: Navigatable {
     
     case directory(DirectoryContentPresenterProtocol)
+    case audioPlayer(AudioPlayerPresenterProtocol, autoPlay: Bool = true)
     
     var viewController: UIViewController {
         switch self {
             case let .directory(presenter):
                 let controller = DirectoryContentViewController(presenter: presenter)
                 presenter.directoryContentView = controller
+                return controller
+                
+            case let .audioPlayer(presenter, autoPlay):
+                let controller = AudioPlayerViewController(presenter: presenter, autoPlay: autoPlay)
+                presenter.audioPlayerView = controller
                 return controller
         }
     }
