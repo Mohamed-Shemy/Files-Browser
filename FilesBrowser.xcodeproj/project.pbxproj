@@ -29,6 +29,25 @@
 		FF32090E27DFE45900E6D0A2 /* FileExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32090D27DFE45900E6D0A2 /* FileExtension.swift */; };
 		FF32091027DFE4D100E6D0A2 /* FileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32090F27DFE4D100E6D0A2 /* FileType.swift */; };
 		FF32091227DFE51A00E6D0A2 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32091127DFE51A00E6D0A2 /* Time.swift */; };
+		FF32091A27DFEACC00E6D0A2 /* DirectoryContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32091827DFEACB00E6D0A2 /* DirectoryContentViewController.swift */; };
+		FF32091B27DFEACC00E6D0A2 /* DirectoryContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF32091927DFEACC00E6D0A2 /* DirectoryContentViewController.xib */; };
+		FF32091D27DFEB1100E6D0A2 /* DirectoryContentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32091C27DFEB1100E6D0A2 /* DirectoryContentPresenter.swift */; };
+		FF32091F27DFEB2A00E6D0A2 /* DirectoryContentPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32091E27DFEB2A00E6D0A2 /* DirectoryContentPresenterProtocol.swift */; };
+		FF32092127DFEB4E00E6D0A2 /* DirectoryContentViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32092027DFEB4E00E6D0A2 /* DirectoryContentViewProtocol.swift */; };
+		FF32092427DFED1A00E6D0A2 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32092327DFED1A00E6D0A2 /* Collection.swift */; };
+		FF32092727DFED3500E6D0A2 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32092627DFED3500E6D0A2 /* UIView.swift */; };
+		FF32092927DFED5400E6D0A2 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32092827DFED5400E6D0A2 /* UITableView.swift */; };
+		FF32092B27DFED7000E6D0A2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32092A27DFED7000E6D0A2 /* UIColor.swift */; };
+		FF32093327DFEDDA00E6D0A2 /* Navigatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32092F27DFEDDA00E6D0A2 /* Navigatable.swift */; };
+		FF32093427DFEDDA00E6D0A2 /* UIViewController + Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32093027DFEDDA00E6D0A2 /* UIViewController + Navigator.swift */; };
+		FF32093527DFEDDA00E6D0A2 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32093127DFEDDA00E6D0A2 /* Navigator.swift */; };
+		FF32093627DFEDDA00E6D0A2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32093227DFEDDA00E6D0A2 /* Router.swift */; };
+		FF32093827DFEE4400E6D0A2 /* FilesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32093727DFEE4400E6D0A2 /* FilesRouter.swift */; };
+		FF32093D27DFEEB900E6D0A2 /* FileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32093B27DFEEB900E6D0A2 /* FileTableViewCell.swift */; };
+		FF32093E27DFEEB900E6D0A2 /* FileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF32093C27DFEEB900E6D0A2 /* FileTableViewCell.xib */; };
+		FF32094227DFEF1000E6D0A2 /* FileAppearanceRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32094127DFEF1000E6D0A2 /* FileAppearanceRepresentable.swift */; };
+		FF32094427DFEF4000E6D0A2 /* FileType + FileAppearanceRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32094327DFEF4000E6D0A2 /* FileType + FileAppearanceRepresentable.swift */; };
+		FF32094627DFEF6A00E6D0A2 /* FileExtension + FileAppearanceRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32094527DFEF6A00E6D0A2 /* FileExtension + FileAppearanceRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +94,25 @@
 		FF32090D27DFE45900E6D0A2 /* FileExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileExtension.swift; sourceTree = "<group>"; };
 		FF32090F27DFE4D100E6D0A2 /* FileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileType.swift; sourceTree = "<group>"; };
 		FF32091127DFE51A00E6D0A2 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		FF32091827DFEACB00E6D0A2 /* DirectoryContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryContentViewController.swift; sourceTree = "<group>"; };
+		FF32091927DFEACC00E6D0A2 /* DirectoryContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DirectoryContentViewController.xib; sourceTree = "<group>"; };
+		FF32091C27DFEB1100E6D0A2 /* DirectoryContentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryContentPresenter.swift; sourceTree = "<group>"; };
+		FF32091E27DFEB2A00E6D0A2 /* DirectoryContentPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryContentPresenterProtocol.swift; sourceTree = "<group>"; };
+		FF32092027DFEB4E00E6D0A2 /* DirectoryContentViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryContentViewProtocol.swift; sourceTree = "<group>"; };
+		FF32092327DFED1A00E6D0A2 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		FF32092627DFED3500E6D0A2 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		FF32092827DFED5400E6D0A2 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		FF32092A27DFED7000E6D0A2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		FF32092F27DFEDDA00E6D0A2 /* Navigatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigatable.swift; sourceTree = "<group>"; };
+		FF32093027DFEDDA00E6D0A2 /* UIViewController + Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController + Navigator.swift"; sourceTree = "<group>"; };
+		FF32093127DFEDDA00E6D0A2 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		FF32093227DFEDDA00E6D0A2 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FF32093727DFEE4400E6D0A2 /* FilesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesRouter.swift; sourceTree = "<group>"; };
+		FF32093B27DFEEB900E6D0A2 /* FileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTableViewCell.swift; sourceTree = "<group>"; };
+		FF32093C27DFEEB900E6D0A2 /* FileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileTableViewCell.xib; sourceTree = "<group>"; };
+		FF32094127DFEF1000E6D0A2 /* FileAppearanceRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileAppearanceRepresentable.swift; sourceTree = "<group>"; };
+		FF32094327DFEF4000E6D0A2 /* FileType + FileAppearanceRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileType + FileAppearanceRepresentable.swift"; sourceTree = "<group>"; };
+		FF32094527DFEF6A00E6D0A2 /* FileExtension + FileAppearanceRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileExtension + FileAppearanceRepresentable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				FF3208E927DFDE0B00E6D0A2 /* Launch Screen */,
+				FF32091327DFEA2D00E6D0A2 /* Directory Content */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -195,6 +234,7 @@
 		FF3208EA27DFDE4C00E6D0A2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FF32092D27DFEDC200E6D0A2 /* Utilities */,
 				FF3208EB27DFDE5800E6D0A2 /* Extensions */,
 			);
 			path = Core;
@@ -203,6 +243,8 @@
 		FF3208EB27DFDE5800E6D0A2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FF32092527DFED2A00E6D0A2 /* UIKit */,
+				FF32092227DFED0D00E6D0A2 /* Foundation */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -276,6 +318,133 @@
 				FF32090B27DFE44200E6D0A2 /* MediaFileDetails.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FF32091327DFEA2D00E6D0A2 /* Directory Content */ = {
+			isa = PBXGroup;
+			children = (
+				FF32093F27DFEF0100E6D0A2 /* Shared */,
+				FF32091627DFEA8E00E6D0A2 /* Router */,
+				FF32091527DFEA8800E6D0A2 /* Presenter */,
+				FF32091427DFEA8400E6D0A2 /* View */,
+			);
+			path = "Directory Content";
+			sourceTree = "<group>";
+		};
+		FF32091427DFEA8400E6D0A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF32093927DFEEA100E6D0A2 /* Cells */,
+				FF32091727DFEA9600E6D0A2 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF32091527DFEA8800E6D0A2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FF32091E27DFEB2A00E6D0A2 /* DirectoryContentPresenterProtocol.swift */,
+				FF32091C27DFEB1100E6D0A2 /* DirectoryContentPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FF32091627DFEA8E00E6D0A2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FF32093727DFEE4400E6D0A2 /* FilesRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FF32091727DFEA9600E6D0A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF32092027DFEB4E00E6D0A2 /* DirectoryContentViewProtocol.swift */,
+				FF32091827DFEACB00E6D0A2 /* DirectoryContentViewController.swift */,
+				FF32091927DFEACC00E6D0A2 /* DirectoryContentViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF32092227DFED0D00E6D0A2 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				FF32092327DFED1A00E6D0A2 /* Collection.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		FF32092527DFED2A00E6D0A2 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FF32092627DFED3500E6D0A2 /* UIView.swift */,
+				FF32092827DFED5400E6D0A2 /* UITableView.swift */,
+				FF32092A27DFED7000E6D0A2 /* UIColor.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		FF32092C27DFEDA800E6D0A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF32094327DFEF4000E6D0A2 /* FileType + FileAppearanceRepresentable.swift */,
+				FF32094527DFEF6A00E6D0A2 /* FileExtension + FileAppearanceRepresentable.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF32092D27DFEDC200E6D0A2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FF32092E27DFEDC600E6D0A2 /* Navigator */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FF32092E27DFEDC600E6D0A2 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				FF32092F27DFEDDA00E6D0A2 /* Navigatable.swift */,
+				FF32093127DFEDDA00E6D0A2 /* Navigator.swift */,
+				FF32093227DFEDDA00E6D0A2 /* Router.swift */,
+				FF32093027DFEDDA00E6D0A2 /* UIViewController + Navigator.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		FF32093927DFEEA100E6D0A2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FF32093A27DFEEA900E6D0A2 /* FileTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FF32093A27DFEEA900E6D0A2 /* FileTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FF32093B27DFEEB900E6D0A2 /* FileTableViewCell.swift */,
+				FF32093C27DFEEB900E6D0A2 /* FileTableViewCell.xib */,
+			);
+			path = FileTableViewCell;
+			sourceTree = "<group>";
+		};
+		FF32093F27DFEF0100E6D0A2 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FF32094027DFEF0600E6D0A2 /* Protocols */,
+				FF32092C27DFEDA800E6D0A2 /* Models */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FF32094027DFEF0600E6D0A2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FF32094127DFEF1000E6D0A2 /* FileAppearanceRepresentable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,7 +553,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF3208C227DFDD9400E6D0A2 /* LaunchScreen.storyboard in Resources */,
+				FF32093E27DFEEB900E6D0A2 /* FileTableViewCell.xib in Resources */,
 				FF3208BF27DFDD9400E6D0A2 /* Assets.xcassets in Resources */,
+				FF32091B27DFEACC00E6D0A2 /* DirectoryContentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,20 +580,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF32091D27DFEB1100E6D0A2 /* DirectoryContentPresenter.swift in Sources */,
 				FF3208F227DFE0A700E6D0A2 /* FileManager + FileManaging.swift in Sources */,
 				FF3208F727DFE1CB00E6D0A2 /* FilesManager.swift in Sources */,
 				FF3208B627DFDD9300E6D0A2 /* AppDelegate.swift in Sources */,
+				FF32093427DFEDDA00E6D0A2 /* UIViewController + Navigator.swift in Sources */,
 				FF32090027DFE2CD00E6D0A2 /* FileDetailsRepresentable.swift in Sources */,
+				FF32092927DFED5400E6D0A2 /* UITableView.swift in Sources */,
 				FF3208F027DFE08200E6D0A2 /* FileManaging.swift in Sources */,
+				FF32094227DFEF1000E6D0A2 /* FileAppearanceRepresentable.swift in Sources */,
 				FF32091227DFE51A00E6D0A2 /* Time.swift in Sources */,
+				FF32092727DFED3500E6D0A2 /* UIView.swift in Sources */,
+				FF32093827DFEE4400E6D0A2 /* FilesRouter.swift in Sources */,
+				FF32092427DFED1A00E6D0A2 /* Collection.swift in Sources */,
 				FF32090C27DFE44200E6D0A2 /* MediaFileDetails.swift in Sources */,
+				FF32091F27DFEB2A00E6D0A2 /* DirectoryContentPresenterProtocol.swift in Sources */,
 				FF32090E27DFE45900E6D0A2 /* FileExtension.swift in Sources */,
 				FF32090A27DFE42E00E6D0A2 /* FileDetails.swift in Sources */,
 				FF3208FE27DFE2BD00E6D0A2 /* FileContentRepresentable.swift in Sources */,
 				FF3208F527DFE0CF00E6D0A2 /* FilesManaging.swift in Sources */,
+				FF32092127DFEB4E00E6D0A2 /* DirectoryContentViewProtocol.swift in Sources */,
 				FF32090827DFE41200E6D0A2 /* FileContent.swift in Sources */,
+				FF32093D27DFEEB900E6D0A2 /* FileTableViewCell.swift in Sources */,
+				FF32091A27DFEACC00E6D0A2 /* DirectoryContentViewController.swift in Sources */,
+				FF32094427DFEF4000E6D0A2 /* FileType + FileAppearanceRepresentable.swift in Sources */,
+				FF32092B27DFED7000E6D0A2 /* UIColor.swift in Sources */,
+				FF32093627DFEDDA00E6D0A2 /* Router.swift in Sources */,
+				FF32093527DFEDDA00E6D0A2 /* Navigator.swift in Sources */,
+				FF32093327DFEDDA00E6D0A2 /* Navigatable.swift in Sources */,
 				FF32091027DFE4D100E6D0A2 /* FileType.swift in Sources */,
 				FF32090427DFE30300E6D0A2 /* TimeRepresentable.swift in Sources */,
+				FF32094627DFEF6A00E6D0A2 /* FileExtension + FileAppearanceRepresentable.swift in Sources */,
 				FF32090227DFE2DF00E6D0A2 /* MediaFileDetailsRepresentable.swift in Sources */,
 				FF32090627DFE3FF00E6D0A2 /* File.swift in Sources */,
 				FF3208FC27DFE2A800E6D0A2 /* FileRepresentable.swift in Sources */,
