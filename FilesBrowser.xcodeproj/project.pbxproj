@@ -48,6 +48,8 @@
 		FF32094227DFEF1000E6D0A2 /* FileAppearanceRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32094127DFEF1000E6D0A2 /* FileAppearanceRepresentable.swift */; };
 		FF32094427DFEF4000E6D0A2 /* FileType + FileAppearanceRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32094327DFEF4000E6D0A2 /* FileType + FileAppearanceRepresentable.swift */; };
 		FF32094627DFEF6A00E6D0A2 /* FileExtension + FileAppearanceRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32094527DFEF6A00E6D0A2 /* FileExtension + FileAppearanceRepresentable.swift */; };
+		FF32094827DFF29A00E6D0A2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32094727DFF29A00E6D0A2 /* AppCoordinator.swift */; };
+		FF32094A27DFF2AB00E6D0A2 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32094927DFF2AB00E6D0A2 /* RootRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,8 @@
 		FF32094127DFEF1000E6D0A2 /* FileAppearanceRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileAppearanceRepresentable.swift; sourceTree = "<group>"; };
 		FF32094327DFEF4000E6D0A2 /* FileType + FileAppearanceRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileType + FileAppearanceRepresentable.swift"; sourceTree = "<group>"; };
 		FF32094527DFEF6A00E6D0A2 /* FileExtension + FileAppearanceRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileExtension + FileAppearanceRepresentable.swift"; sourceTree = "<group>"; };
+		FF32094727DFF29A00E6D0A2 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FF32094927DFF2AB00E6D0A2 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				FF3208B527DFDD9300E6D0A2 /* AppDelegate.swift */,
+				FF32094927DFF2AB00E6D0A2 /* RootRouter.swift */,
+				FF32094727DFF29A00E6D0A2 /* AppCoordinator.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -584,6 +590,7 @@
 				FF3208F227DFE0A700E6D0A2 /* FileManager + FileManaging.swift in Sources */,
 				FF3208F727DFE1CB00E6D0A2 /* FilesManager.swift in Sources */,
 				FF3208B627DFDD9300E6D0A2 /* AppDelegate.swift in Sources */,
+				FF32094A27DFF2AB00E6D0A2 /* RootRouter.swift in Sources */,
 				FF32093427DFEDDA00E6D0A2 /* UIViewController + Navigator.swift in Sources */,
 				FF32090027DFE2CD00E6D0A2 /* FileDetailsRepresentable.swift in Sources */,
 				FF32092927DFED5400E6D0A2 /* UITableView.swift in Sources */,
@@ -607,6 +614,7 @@
 				FF32092B27DFED7000E6D0A2 /* UIColor.swift in Sources */,
 				FF32093627DFEDDA00E6D0A2 /* Router.swift in Sources */,
 				FF32093527DFEDDA00E6D0A2 /* Navigator.swift in Sources */,
+				FF32094827DFF29A00E6D0A2 /* AppCoordinator.swift in Sources */,
 				FF32093327DFEDDA00E6D0A2 /* Navigatable.swift in Sources */,
 				FF32091027DFE4D100E6D0A2 /* FileType.swift in Sources */,
 				FF32090427DFE30300E6D0A2 /* TimeRepresentable.swift in Sources */,

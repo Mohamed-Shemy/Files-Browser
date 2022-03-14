@@ -59,10 +59,8 @@ extension Time: CustomStringConvertible {
     var description: String {
         if hour > 0 {
             return String(format: "%02d:%02d:%02d", hour, minute, second)
-        } else if minute > 0 {
-            return String(format: "%02d:%02d", minute, second)
         } else {
-            return String(format: "%02d", second)
+            return String(format: "%02d:%02d", minute, second)
         }
     }
 }
