@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudioPlayerViewController" customModule="PlayerReader" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudioPlayerViewController" customModule="FilesBrowser" customModuleProvider="target">
             <connections>
                 <outlet property="elapsedTimeLabel" destination="qND-QK-e65" id="6sU-Xj-a7f"/>
                 <outlet property="nextButton" destination="3cd-Kk-bXp" id="atR-WC-7v7"/>
@@ -121,12 +121,22 @@
                             <exclude reference="dVB-dk-I6Q"/>
                         </mask>
                     </variation>
+                    <variation key="heightClass=compact-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Ogc-GU-0GG"/>
+                        </mask>
+                    </variation>
                     <variation key="heightClass=compact-widthClass=regular">
                         <mask key="constraints">
                             <include reference="Ogc-GU-0GG"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact" alignment="fill" axis="vertical">
+                        <mask key="constraints">
+                            <include reference="dVB-dk-I6Q"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular" alignment="fill" axis="vertical">
                         <mask key="constraints">
                             <include reference="dVB-dk-I6Q"/>
                         </mask>
