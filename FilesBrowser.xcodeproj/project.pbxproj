@@ -55,6 +55,7 @@
 		FF32095427DFF55400E6D0A2 /* AudioPlayerViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32095327DFF55400E6D0A2 /* AudioPlayerViewProtocol.swift */; };
 		FF32095627DFF57100E6D0A2 /* AudioPlayerPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32095527DFF57100E6D0A2 /* AudioPlayerPresenterProtocol.swift */; };
 		FF32095827DFF58900E6D0A2 /* AudioPlayerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32095727DFF58900E6D0A2 /* AudioPlayerPresenter.swift */; };
+		FF32095A27E0638A00E6D0A2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32095927E0638A00E6D0A2 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		FF32095327DFF55400E6D0A2 /* AudioPlayerViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewProtocol.swift; sourceTree = "<group>"; };
 		FF32095527DFF57100E6D0A2 /* AudioPlayerPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerPresenterProtocol.swift; sourceTree = "<group>"; };
 		FF32095727DFF58900E6D0A2 /* AudioPlayerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerPresenter.swift; sourceTree = "<group>"; };
+		FF32095927E0638A00E6D0A2 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -388,6 +390,7 @@
 			isa = PBXGroup;
 			children = (
 				FF32092327DFED1A00E6D0A2 /* Collection.swift */,
+				FF32095927E0638A00E6D0A2 /* String.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -636,6 +639,7 @@
 			files = (
 				FF32091D27DFEB1100E6D0A2 /* DirectoryContentPresenter.swift in Sources */,
 				FF3208F227DFE0A700E6D0A2 /* FileManager + FileManaging.swift in Sources */,
+				FF32095A27E0638A00E6D0A2 /* String.swift in Sources */,
 				FF3208F727DFE1CB00E6D0A2 /* FilesManager.swift in Sources */,
 				FF3208B627DFDD9300E6D0A2 /* AppDelegate.swift in Sources */,
 				FF32094A27DFF2AB00E6D0A2 /* RootRouter.swift in Sources */,

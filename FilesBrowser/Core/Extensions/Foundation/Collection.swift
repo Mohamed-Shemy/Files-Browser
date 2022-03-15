@@ -17,3 +17,22 @@ extension Collection {
         return self[index]
     }
 }
+
+extension Collection {
+    
+    func sorted<T: Comparable>(by keyPath: KeyPath<Element, T>, _ condition: (T, T) throws -> Bool) rethrows -> [Element] {
+        try sorted { try condition($0[keyPath: keyPath], $1[keyPath: keyPath]) }
+    }
+    
+    func filter<T>(where keyPath: KeyPath<Element, T>, _ condition: (T?, T?) throws -> Bool, _ element: T?) rethrows -> [Element] {
+        try filter { try condition($0[keyPath: keyPath], element) }
+    }
+    
+    func filter(where keyPath: KeyPath<Element, Bool>) -> [Element] {
+        filter({ $0[keyPath: keyPath] })
+    }
+    
+    func filter(whereNot keyPath: KeyPath<Element, Bool>) -> [Element] {
+        filter({ !$0[keyPath: keyPath] })
+    }
+}

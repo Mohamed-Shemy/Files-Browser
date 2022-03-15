@@ -13,4 +13,9 @@ enum FileType {
     case directory
     case any(FileDetailsRepresentable)
     case media(MediaFileDetailsRepresentable)
+    
+    var isDirectory: Bool {
+        if case .directory = self { return true }
+        return false
+    }
 }

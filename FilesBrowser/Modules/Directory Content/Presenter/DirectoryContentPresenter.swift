@@ -34,7 +34,7 @@ final class DirectoryContentPresenter: DirectoryContentPresenterProtocol {
         let result = manager.getContents(in: directory.path, ofType: ext)
         switch result {
             case .success(let content):
-                items = content
+                items = sortDirectory(content: content)
                 directoryContentView?.directoryContentDidLoaded()
                 
             case .failure(let error):
@@ -48,5 +48,19 @@ final class DirectoryContentPresenter: DirectoryContentPresenterProtocol {
     
     func getMediaFiles() -> [FileContentRepresentable] {
         items.filter { if case .media = $0.type { return true }; return false }
+    }
+    
+    // MARK: - Private Methods & Helpers
+    
+    private func sortDirectory(content items: [FileContentRepresentable]) -> [FileContentRepresentable] {
+        let directories = items
+            .filter(where: \.type.isDirectory)
+            .sorted(by: \.name.lowercase, <)
+        
+        let files = items
+            .filter(whereNot: \.type.isDirectory)
+            .sorted(by: \.name.lowercase, <)
+        
+        return directories + files
     }
 }
